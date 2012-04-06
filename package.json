@@ -1,0 +1,20 @@
+{
+  "author": "Włodek Bzyl",
+  "name": "xxx",
+  "description": "Simple XXX",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wbzyl/xxx.git"
+  },
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

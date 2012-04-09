@@ -5,7 +5,7 @@ NodeJS module HOWTO.
 
 ## Continous instegration with Travis
 
-* login into Travis with Github my account
+* login into Travis with Github account
 * goto the Travis profile page
 * add a *.travis.yml* file:
 

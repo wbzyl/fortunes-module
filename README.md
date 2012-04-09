@@ -34,18 +34,23 @@ the following files:
 
 Setup a local git repository:
 
-    git init
-    git add .
-    git commit -m "create the basic structure"
+```shell-unix-generic
+git init
+git add .
+git commit -m "create the basic structure"
+```
 
 Install the *github* gem:
 
-    gem install github
+```shell-unix-generic
+gem install github
+```
 
 Create the remote repo at GitHub:
 
-    github create-from-local
-
+```shell-unix-generic
+github create-from-local
+```
 
 ## Make the module
 
@@ -80,13 +85,17 @@ Use *npm init* to create the following *package.json* file:
 
 Install the *devDependencies*:
 
-    npm install
+```shell-unix-generic
+npm install
+```
 
 and ignore them:
 
-    echo node_modules/ > .gitignore
-    git add package.json .gitignore
-    git commit -m 'ignore installed dependencies'
+```shell-unix-generic
+echo node_modules/ > .gitignore
+git add package.json .gitignore
+git commit -m 'ignore installed dependencies'
+```
 
 
 ## Make the first test

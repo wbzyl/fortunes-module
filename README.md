@@ -2,14 +2,22 @@
 
 NodeJS module HOWTO.
 
-### Continous instegration with Travis
+
+## Continous instegration with Travis
 
 * login into Travis with Github my account
 * goto the Travis profile page
+* add a *.travis.yml* file:
+
+```yaml
+language: node_js
+node_js:
+  - 0.6
+```
 
 [![Build Status](https://secure.travis-ci.org/wbzyl/fortunes-module.png)](http://travis-ci.org/wbzyl/fortunes-module)
 
-### Travis resources
+Travis resources
 
 * [getting started](http://about.travis-ci.org/docs/user/getting-started/)
 * [status images](http://about.travis-ci.org/docs/user/status-images/)

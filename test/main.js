@@ -1,11 +1,11 @@
 var should = require('should');
-var xxx = require('../lib/main');
+var fm = require('../lib/main');
 
-describe('xxx', function() {
+describe('fortunes module', function() {
   describe('with no arguments', function() {
-    it('returns an empty array', function() {
-      var result = xxx();
-      result.should.eql([]);
+    it('returns a random quote', function() {
+      var result = fm();
+      result.should.not.be.empty;
     });
   });
 });

@@ -2,7 +2,7 @@
 
 NodeJS module HOWTO.
 
-## Continous instegration with Travis
+### Continous instegration with Travis
 
 * login into Travis with Github my account
 * goto the Travis profile page
@@ -13,3 +13,83 @@ NodeJS module HOWTO.
 
 * [getting started](http://about.travis-ci.org/docs/user/getting-started/)
 * [status images](http://about.travis-ci.org/docs/user/status-images/)
+
+
+## Create the basic structure
+
+Create a directory *fortunes-module* and put in it
+the following files:
+
+    .
+    |-- README.md
+    |-- package.json
+    |-- lib
+    |   `-- main.js
+    `-- test
+        `-- main.js
+
+
+## GitHub
+
+
+Setup a local git repository:
+
+    git init
+    git add .
+    git commit -m "create the basic structure"
+
+Install the *github* gem:
+
+    gem install github
+
+Create the remote repo at GitHub:
+
+    github create-from-local
+
+
+## Make the module
+
+Use *npm init* to create the following *package.json* file:
+
+
+```json
+{
+  "author": "Włodek Bzyl",
+  "name": "fortunes-module",
+  "description": "print a random quote",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wbzyl/fortunes-module.git"
+  },
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "",
+    "should": ""
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
+```
+
+Install the *devDependencies*:
+
+    npm install
+
+and ignore them:
+
+    echo node_modules/ > .gitignore
+    git add package.json .gitignore
+    git commit -m 'ignore installed dependencies'
+
+
+## Make the first test
+
+* [should.js](https://github.com/visionmedia/should.js)
+* [mocha](http://visionmedia.github.com/mocha/)

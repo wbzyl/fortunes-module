@@ -1,11 +1,11 @@
 {
   "author": "Włodek Bzyl",
-  "name": "xxx",
-  "description": "Simple XXX",
+  "name": "fortunes-module",
+  "description": "print a random quote",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/wbzyl/xxx.git"
+    "url": "git://github.com/wbzyl/fortunes-module.git"
   },
   "main": "lib/main.js",
   "scripts": {

@@ -3,26 +3,6 @@
 NodeJS module HOWTO.
 
 
-## Continous instegration with Travis
-
-* login into Travis with Github account
-* goto the Travis profile page
-* add a *.travis.yml* file:
-
-```yaml
-language: node_js
-node_js:
-  - 0.6
-```
-
-[![Build Status](https://secure.travis-ci.org/wbzyl/fortunes-module.png)](http://travis-ci.org/wbzyl/fortunes-module)
-
-Travis resources
-
-* [getting started](http://about.travis-ci.org/docs/user/getting-started/)
-* [status images](http://about.travis-ci.org/docs/user/status-images/)
-
-
 ## Create the basic structure
 
 Create a directory *fortunes-module* and put in it
@@ -38,7 +18,6 @@ the following files:
 
 
 ## GitHub
-
 
 Setup a local git repository:
 
@@ -60,7 +39,28 @@ Create the remote repo at GitHub:
 github create-from-local
 ```
 
-## Make the module
+# Continous integration with Travis
+
+* login into Travis with Github account
+* goto the Travis profile page
+* add a *.travis.yml* file:
+
+```yaml
+language: node_js
+node_js:
+  - 0.6
+```
+* add, commit and push changes to GitHub
+
+[![Build Status](https://secure.travis-ci.org/wbzyl/fortunes-module.png)](http://travis-ci.org/wbzyl/fortunes-module)
+
+Travis resources
+
+* [getting started](http://about.travis-ci.org/docs/user/getting-started/)
+* [status images](http://about.travis-ci.org/docs/user/status-images/)
+
+
+# Make the module
 
 Use *npm init* to create the following *package.json* file:
 

@@ -153,7 +153,15 @@ commit & push changes to GitHub:
 
     git add .
     git commit -m "ready for production"
+    git tag v1.0.0
+    git push --tags
 
 And finally publish it:
 
     npm publish .
+
+
+## Create asynchronous fortunes
+
+Create new branch and push it to GitHub:
+

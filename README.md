@@ -54,7 +54,7 @@ node_js:
 ```
 * add, commit and push changes to GitHub
 
-[![Build Status](https://secure.travis-ci.org/wbzyl/fortunes-module.png)](http://travis-ci.org/wbzyl/fortunes-module)
+[![Build Status](https://secure.travis-ci.org/wbzyl/fortunes-module.png?branch=asynchronous)](http://travis-ci.org/wbzyl/fortunes-module)
 
 Travis resources
 

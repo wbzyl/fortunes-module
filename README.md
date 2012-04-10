@@ -82,7 +82,9 @@ Use *npm init* to create the following *package.json* file:
     "url": "git://github.com/wbzyl/fortunes-module.git"
   },
   "main": "lib/main.js",
-  "bin": {"nfortune", "./bin/nfortune" },
+  "bin": {
+    "nfortune": "./bin/nfortune"
+  },
   "scripts": {
     "test": "mocha test/*.js"
   },

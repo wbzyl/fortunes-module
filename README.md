@@ -11,6 +11,8 @@ the following files:
     .
     |-- README.md
     |-- package.json
+    |-- bin
+    |   `-- nfortune
     |-- lib
     |   `-- main.js
     `-- test

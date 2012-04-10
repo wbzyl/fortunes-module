@@ -67,22 +67,27 @@ Use *npm init* to create the following *package.json* file:
 
 ```json
 {
-  "author": "Włodek Bzyl",
+  "author": "Włodek Bzyl <matwb@ug.edu.pl>",
+  "contributors": [
+    { "name": "Włodek Bzyl", "email": "matwb@ug.edu.pl" }
+  ],
   "name": "fortunes-module",
   "description": "print a random quote",
   "version": "0.0.1",
+  "keywords": ["fortune", "template", "module"],
   "repository": {
     "type": "git",
     "url": "git://github.com/wbzyl/fortunes-module.git"
   },
   "main": "lib/main.js",
+  "bin": {"nfortune", "./bin/nfortune" },
   "scripts": {
     "test": "mocha test/*.js"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "",
-    "should": ""
+    "mocha": "*",
+    "should": "*"
   },
   "optionalDependencies": {},
   "engines": {

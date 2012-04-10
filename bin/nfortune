@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var fortune = require('../lib/main')
+
+console.log(" ", fortune())

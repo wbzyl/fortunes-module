@@ -2,4 +2,6 @@
 
 var fortune = require('../lib/main')
 
-console.log(" ", fortune())
+fortune(function(result) {
+  console.log(" ", result)
+})

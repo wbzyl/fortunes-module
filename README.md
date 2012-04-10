@@ -154,6 +154,6 @@ commit & push changes to GitHub:
     git add .
     git commit -m "ready for production"
 
-And finally publis it:
+And finally publish it:
 
-    npm publish
+    npm publish .

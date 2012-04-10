@@ -134,3 +134,26 @@ describe('fortunes module', function() {
   })
 })
 ```
+
+
+## Publish the module
+
+Try the module locally:
+
+    npm install -g .
+    nfortunes
+    npm rm -g fortunes-module
+
+Register in *npmjs.org*:
+
+    npm adduser
+
+Change the version to 1.0.0 in *package.json*
+commit & push changes to GitHub:
+
+    git add .
+    git commit -m "ready for production"
+
+And finally publis it:
+
+    npm publish

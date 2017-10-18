@@ -118,7 +118,7 @@ git commit -m 'ignore installed dependencies'
 ## Make the first test
 
 * [should.js](https://github.com/visionmedia/should.js)
-* [mocha](http://visionmedia.github.com/mocha/)
+* [mocha](http://mochajs.org/)
 
 
 ```javascript

@@ -159,9 +159,3 @@ commit & push changes to GitHub:
 And finally publish it:
 
     npm publish .
-
-
-## Create asynchronous fortunes
-
-Create new branch and push it to GitHub:
-
